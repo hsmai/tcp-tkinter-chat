@@ -68,6 +68,8 @@
   - exclude가 지정되면 해당 소켓(보낸 사람)에는 전송하지 않음
   - 전송 실패 시 remove_client로 정리
 
+<br>
+
 ### 2) Client (chat_client.py)
 
 채팅 클라이언트는 **UI 이벤트 처리**와 **서버 메시지 수신**을 동시에 수행해야 합니다.
@@ -102,6 +104,7 @@
 
 (위 `<username>: <text>` 형태는 UI에서 `name: text`를 분리해 **닉네임 컬러링**을 적용하기에도 적합합니다.)
 
+<br>
 
 ### 3) UI Helper (chat_ui.py)
 
