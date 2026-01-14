@@ -106,7 +106,7 @@
 
 <br>
 
-## 3) 채팅 UI Helper (chat_ui.py)
+### 3) 채팅 UI Helper (chat_ui.py)
 
 ChatUI는 Tkinter 기반 UI 요소를 생성하고, 메시지 표시/입력 처리 기능을 제공합니다.
 
