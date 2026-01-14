@@ -106,19 +106,18 @@
 
 <br>
 
-### 3) UI Helper (chat_ui.py)
+## 3) 채팅 UI Helper (chat_ui.py)
 
-ChatUI는 다음 UI 구성/기능을 제공합니다.
+ChatUI는 Tkinter 기반 UI 요소를 생성하고, 메시지 표시/입력 처리 기능을 제공합니다.
 
-- 실행 시 username 입력창(simpledialog) 표시
-  - 입력이 없으면 User### 형태로 자동 생성
-- 스크롤 가능한 채팅창(ScrolledText)
-- 입력창(Entry) + Send 버튼
+- 채팅 로그 영역(스크롤 가능)
+- 입력창 + Send 버튼
 - set_send_callback(callback)
-  - Send 버튼 클릭과 Enter 키 입력을 callback에 연결
+  - 버튼 클릭 및 Enter 입력을 callback으로 연결
+- get_message()
+  - 입력창의 현재 텍스트를 가져오고(구현에 따라) 입력창을 비워줌
 - display_message(msg)
-  - “[System]”으로 시작하면 회색/이탤릭 스타일로 표시
-  - “name: text” 형태면 name에 랜덤 색상 부여하여 굵게 표시
+  - 서버/클라이언트에서 받은 메시지를 채팅 로그에 출력
 
 ---
 
